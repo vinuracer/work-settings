@@ -1,0 +1,64 @@
+{
+   "author": "Arthur Carabott",
+   "background": {
+      "page": "background.html",
+      "persistent": false
+   },
+   "browser_action": {
+      "default_title": "Tab to window"
+   },
+   "commands": {
+      "01-tab-to-window-normal": {
+         "description": "Window",
+         "suggested_key": {
+            "default": "Alt+X",
+            "linux": "Alt+Shift+X"
+         }
+      },
+      "02-tab-to-window-popup": {
+         "description": "Popup",
+         "suggested_key": {
+            "default": "Alt+C",
+            "linux": "Alt+Shift+C"
+         }
+      },
+      "03-tab-to-window-next": {
+         "description": "Next Window",
+         "suggested_key": {
+            "default": "Alt+Z",
+            "linux": "Alt+Shift+Z"
+         }
+      },
+      "04-tab-to-window-previous": {
+         "description": "Previous Window"
+      },
+      "05-tab-to-window-display": {
+         "description": "Next Display",
+         "suggested_key": {
+            "default": "Alt+D",
+            "linux": "Alt+Shift+D",
+            "windows": "Alt+Shift+D"
+         }
+      }
+   },
+   "description": "Add a keyboard shortcut to move the current tab to a new window or popup.",
+   "differential_fingerprint": "1.59b9f123b5510483abf2157692d6ffc164214c703b858702fa6194a2c282b190",
+   "icons": {
+      "128": "icons/ttw128.png",
+      "16": "icons/ttw16.png",
+      "48": "icons/ttw48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLhlHRfPhpXVxiNAH497nyZQdbetLNmF/Ssjr8igCjM05B0or6wVsFvuug5ib6Sb8PqeXoOcXAVglS2dpJtTc+P8RReOuPwXYXAFk/xwxVBRjYu/lCWXZXFD1t+QZuTWCkPaKceZVEMRbLCAW8ov4gtvVhEHn4VQEmpAhgNtVJzwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "61",
+   "name": "Tab to Window/Popup - Keyboard Shortcut",
+   "options_page": "options.html",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "tabs", "storage", "system.display", "contextMenus" ],
+   "short_name": "Tab to Window",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.0"
+}

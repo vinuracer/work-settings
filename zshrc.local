@@ -1,0 +1,15 @@
+# PATH SOURCING
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/bin:~/.local/bin
+
+# BASE LIBRARY
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:usr/local/lib64:/usr/lib64:/usr/lib/x86_64-linux-gnu
+
+# Clang support
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/llvm-3.8/lib
+
+# RV64-tools support
+export PATH=/opt/smi/rv64-tools/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/smi/rv64-tools/lib
+
+# Source the sim environment state
+source ~/setup-env/source-smi-sim

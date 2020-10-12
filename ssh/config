@@ -1,0 +1,15 @@
+# Host work
+#  HostName work.simplemachinesinc.com
+#  User vinay
+#  IdentityFile ~/.ssh/msn_rsa
+#  ForwardAgent yes
+#  ForwardX11 yes
+#  Compression yes
+
+Host gitlab._____.____
+ForwardX11 no
+
+Host *
+ForwardAgent yes
+ForwardX11 no
+ForwardX11Trusted yes

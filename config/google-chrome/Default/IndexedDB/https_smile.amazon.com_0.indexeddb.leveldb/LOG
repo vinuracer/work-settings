@@ -1,0 +1,5 @@
+2020/02/11-17:32:15.708 16c8 Reusing MANIFEST /home/vinay/.config/google-chrome/Default/IndexedDB/https_smile.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/02/11-17:32:18.809 45e9 Level-0 table #5: started
+2020/02/11-17:32:18.809 45e9 Level-0 table #5: 1047 bytes OK
+2020/02/11-17:32:18.811 45e9 Delete type=0 #3
+2020/02/11-17:32:18.811 45e9 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

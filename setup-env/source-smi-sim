@@ -1,0 +1,77 @@
+# SMI
+#export SMI=/home/vinay/smi
+export SMI=/share/sjc/user/vinay/smi
+
+#-------------------------- DEV ------------------------------#
+# PRX-STACK, SIMS & APPS
+export PRX_STACK=$SMI/proximate-stack
+export PRX_APPS=$SMI/prx-apps
+export DIRECTED_APPS=$SMI/directed-apps
+
+export SB_SIM=$PRX_STACK/libraries/libsbsim
+export PRX_FSIM=$PRX_STACK/simulators/fsim
+
+# PRX_TOOLS
+export PRX_TOOLS=$PRX_STACK/prx-tools
+export PATH=$PATH:$PRX_TOOLS/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PRX_TOOLS/lib
+export PATH=$PATH:$PRX_STACK/tools/cgraviz
+
+# HW
+export PRX_HW=$SMI/proximate-hw
+
+# Top-level hardware repos
+export PRX_CHIP=$PRX_HW/prx-chip
+export PRX_VERIF=$PRX_HW/prx-verif
+export PRX_RTL=$PRX_HW/prx-rtl-release
+
+# Verification Testbench & Tools
+export ATLAS_TB=$PRX_VERIF/atlas-tb
+export GLADOS=$PRX_VERIF/glados
+export TESTBOT=$PRX_VERIF/testbot
+export TBTESTS=$PRX_VERIF/tbtests
+export GLADOS=$PRX_VERIF/glados
+#export TURRET_TB=$PRX_VERIF/turret-tb
+
+# Validation repo & environment
+export PRX_VAL=$PRX_HW/prx-validation
+export PRX_VAL_TOOLS=$PRX_VAL/prx-val-tools
+export TURRET_TB=$PRX_HW/validation-tb
+export PATH=$PATH:$TURRET_TB/bin
+
+# Validation utilities path
+export PATH=$PATH:$PRX_VAL_TOOLS/utilities
+
+# Testbot included in the path
+export PATH=$PATH:$TESTBOT
+
+# Atlas build environment
+export ATLAS_BUILD=$ATLAS_TB/build
+
+# Softbrain Related
+export SB_MODEL=$PRX_TOOLS/share/libsbsched/models/softbrain_8x8.sbmodel
+
+# RC files
+# source $PRX_CHIP/.atlasrc
+source $PRX_RTL/.chiprc
+source $PRX_RTL/.iprc
+
+#----------------------------- EXT ----------------------------#
+
+# Source synopsys environment setup
+#source /share/xcl/external/tools/env_setup/synopsys_setup.sh
+export SNPSLMD_LICENSE_FILE=$LM_LICENSE_FILE
+export DESIGNWARE_HOME=/share/external/tools/synopsys/dw/iip
+
+# Source Mentor Questa environment setup -- XCL
+#source /share/xcl/external/tools/env_setup/mentor_setup.sh
+
+# Source Mentor Questa environment setup -- SJC
+source /share/sjc/external/tools/env_setup/mentor_setup.sh
+
+# Xilinx Vivado toolchain
+export PATH=$PATH:/opt/Xilinx/Vivado/2019.2/bin
+export XILINX_VIVADO=/opt/Xilinx/Vivado/2019.2
+
+# Synplify premier installation
+export PATH=$PATH:/share/xcl/turret/external/tools/synopsys/fpga/P-2019.09-SP1/bin

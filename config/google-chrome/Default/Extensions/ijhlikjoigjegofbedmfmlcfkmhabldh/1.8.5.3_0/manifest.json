@@ -1,0 +1,32 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "icon19.png",
+      "default_popup": "popup.html",
+      "default_title": "ESPN Cricinfo - Cricket news, features and live scores"
+   },
+   "content_scripts": [ {
+      "js": [ "js/check.js" ],
+      "matches": [ "https://*.cricinfo.com/", "http://*.cricinfo.org/", "https://*.cricinfo.com/*match/*", "http://*.cricinfo.org/*match/*", "https://*.espncricinfo.com/", "http://*.espncricinfo.org/", "https://*.espncricinfo.com/*match/*", "http://*.espncricinfo.org/*match/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Shows you the latest cricket news, features and live scores from ESPNcricinfo.com",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChA0bhqWWA0oAlWzrpiJtU25R91EjA+O+xWXOg+xiU6/um9rIafDRhmoMzuW78WaRG4LyCbv+xQx2wPX2kCYW5OluLrOqRTSBMJTgUW84xEThO2F9Q1Lnr0M2LK2Co2HdnGJYKB2jHLJb1rqq1DB2WcE6tC8lbkFQGJcvNVQm93QIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "5.0",
+   "name": "ESPNCricinfo",
+   "options_page": "options.html",
+   "permissions": [ "notifications", "background", "https://*.cricinfo.com/", "http://*.cricinfo.org/", "https://*.espncricinfo.com/", "http://*.espncricinfo.org/" ],
+   "short_name": "ESPNCricinfo",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.8.5.3"
+}

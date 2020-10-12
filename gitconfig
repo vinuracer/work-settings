@@ -1,0 +1,48 @@
+[push]
+	default = matching
+[user]
+	name = Vinay Gangadhar
+	email = vinay@simplemachinesinc.com
+
+[alias]
+
+  ##
+  # One letter alias for our most frequent commands.
+  #
+  # Guidelines: these aliases do not use options, because we want
+  # these aliases to be easy to compose and use in many ways.
+  ##
+
+  a = add
+  b = branch
+  c = commit
+  d = diff
+  f = fetch
+  g = grep
+  l = log
+  m = merge
+  p = pull
+  r = remote
+  s = status
+  w = whatchanged
+
+  ## 2 letter aliases
+
+  lg = log --graph --all --decorate --oneline
+  ci = commit --interactive
+  lst = !git log --since yesterday --author $(git config user.email) --pretty=short
+
+  #tlab = log --pretty=tformat:"%Cred%h%Creset %Cblue%aN%Creset:%Cgreen%d%Creset %s" --graph --date-order --branches
+  tlab = log --graph --date-order --branches
+
+  st = status
+  co = checkout
+
+  ba = branch -a
+
+[diff]
+	tool = meld
+[core]
+	autocrlf = input
+  editor = vim
+	excludesfile = /home/vinay/.global_ignore

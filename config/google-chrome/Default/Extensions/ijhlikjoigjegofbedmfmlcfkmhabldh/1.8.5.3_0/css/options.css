@@ -1,0 +1,39 @@
+/* Clone the look and feel of "chrome://" pages. */
+body {
+margin: 10px;
+font: 84% Arial, sans-serif
+}
+
+h1 { font-size: 156% }
+
+h1 img {
+margin: 1px 5px 0 1px;
+vertical-align: middle
+}
+
+h2 {
+border-top: 1px solid #9cc2ef;
+background-color: #ebeff9;
+padding: 3px 5px;
+font-size: 100%
+}
+
+table {
+font-size:100%;
+}
+
+table.teams label {
+color:#777;
+}
+a.disabled{color: #777;}
+a.enabled{color: #035bac;}
+a{color: #035bac;}
+
+th {
+  margin-bottom:2px;
+  color:#777;
+  font-weight:bold;
+  text-align:left;
+}
+
+form { margin-left:10px; }

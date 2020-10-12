@@ -1,0 +1,13 @@
+2020/02/11-18:47:51.818 da0 Reusing MANIFEST /home/vinay/.config/google-chrome/Default/IndexedDB/https_forums.intel.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/02/11-18:47:53.281 45e9 Level-0 table #5: started
+2020/02/11-18:47:53.292 17dd Current memtable full; waiting...
+2020/02/11-18:47:53.294 45e9 Level-0 table #5: 1410263 bytes OK
+2020/02/11-18:47:53.295 45e9 Delete type=0 #3
+2020/02/11-18:47:53.295 45e9 Level-0 table #7: started
+2020/02/11-18:47:53.298 45e9 Level-0 table #7: 164769 bytes OK
+2020/02/11-18:47:53.298 45e9 Delete type=0 #4
+2020/02/11-18:47:53.299 45e9 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/02/11-18:47:53.668 45e9 Compacting 1@1 + 1@2 files
+2020/02/11-18:47:53.687 45e9 Generated table #8@1: 3692 keys, 1505530 bytes
+2020/02/11-18:47:53.687 45e9 Compacted 1@1 + 1@2 files => 1505530 bytes
+2020/02/11-18:47:53.688 45e9 compacted to: files[ 0 0 1 0 0 0 0 ]

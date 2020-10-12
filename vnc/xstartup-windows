@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# prevent keyboard mis-mapping
+export XKL_XMODMAP_DISABLE=1
+
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+
+# Xmonad script
+# Configure PATH so that we can access our scripts below
+PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+
+xsetroot -cursor_name left_ptr &
+xrdb -merge ~/.Xdefaults &
+xmodmap ~/.xmodmap
+setxkbmap -option "ctrl:nocaps" &
+
+# source the ~/.ssh/rc to create a symlink
+source ~/.ssh/rc
+
+# Start a window compositor. This ensures Google Chrome paints correctly.
+xcompmgr -n &
+
+# Set a wallpaper
+feh --bg-fill ~/Downloads/wall.png &
+
+# Start the system tray
+stalonetray -c ~/.xmonad/stalonetrayrc-dual &
+
+# Start two terminals
+terminator &
+terminator &
+
+# Start a browser
+google-chrome &
+
+# Start sound server
+pulseaudio --start --log-target=syslog &
+
+exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad

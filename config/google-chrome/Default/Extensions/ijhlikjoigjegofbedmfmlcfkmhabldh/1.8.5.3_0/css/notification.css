@@ -1,0 +1,10 @@
+body { margin:0; font-family:arial; font-size:10pt }
+h1 { font-weight:bold; font-size:16px; margin:2px 0 2px 4px; color:#0068C4; font-family:arial; }
+
+a { color: #035BAC; text-decoration:none; }
+a:hover { text-decoration:underline; }
+a:visited { color: #035BAC; text-decoration:none; }
+a:visited:hover { text-decoration:underline; }
+#notify{display: none;}
+.notifywrap{background:url('icon48.png') no-repeat 0% 50%; margin:0 4px; padding-left:50px; min-height:48px;}
+#canvas,#icon{display:none;}

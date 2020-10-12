@@ -1,0 +1,406 @@
+{
+  "program": {
+    "fileInfos": {
+      "../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7",
+        "signature": "b42eddba1a53c9d27279cfe7fc0416c10a81489826ad47e39013b9d340fc0cc7"
+      },
+      "../node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "../node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "../node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "../node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed",
+        "signature": "f2039e0dbc31f69183f6377b368c033802dfdcf77e5fd214def06c1fd7b225ed"
+      },
+      "../node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6",
+        "signature": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6"
+      },
+      "../node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8",
+        "signature": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8"
+      },
+      "../node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122",
+        "signature": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122"
+      },
+      "../node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210",
+        "signature": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210"
+      },
+      "../node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca",
+        "signature": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca"
+      },
+      "../node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "../node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "../node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "../node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "../node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408",
+        "signature": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408"
+      },
+      "../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "../node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "../node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "../ts/options-storage.ts": {
+        "version": "bef4c61f24908a1ee17db28cb25083ea0fb3c3117f52a61c77acb9078c3b103e",
+        "signature": "df8586250c57893a721c8e217bc993fc60c0b4d8eef8a218f85e791026634b9f"
+      },
+      "../ts/api.ts": {
+        "version": "f0237717b162f127e2fb04c00887b73e990e811a495cc9dd2a2f45408e2fe4da",
+        "signature": "23a29bec6c8e93a3e04511cc17ed99f8841a63c046bd9960e3e1d9a1a981effe"
+      },
+      "../ts/createnewwindow.ts": {
+        "version": "1fdc1a8e2438d2e6d65a3fd6f42d63b394a28c63dd78d6f9f98df3a22e7db7a6",
+        "signature": "5d997b5c70772e4f60fb49dea2b102ff3852eec10ba8b7b4de3601643c4acf22"
+      },
+      "../ts/dobackgroundaction.ts": {
+        "version": "2aa0abeb6e479bb3e5414fe914e16c5009277c18c13978c8171c8bc7086af1d8",
+        "signature": "4debbdcc56b9c739889b3e046af00b682828c46802d76c1897be9e92d2bfc6c2"
+      },
+      "../ts/getclonebounds.ts": {
+        "version": "e59985d25d70eba6ee0b342a15b102df6dd7a1060446dcd15fa82f5c1fd503c2",
+        "signature": "62b7c291c8a12873c9b9a1bda4d38179b34de501fb6f0d8e8238799f8c5bc7f7"
+      },
+      "../ts/getsizeandpos.ts": {
+        "version": "765d69a12ad3fd794be97794358a9f3df24384aa5d315521a44b8d32e69e0b45",
+        "signature": "6a23a6dabf0248c9c93d5fd9dc7184c10aafb8af460c2aaf7274ed8fa9979e0c"
+      },
+      "../ts/getwindowbounds.ts": {
+        "version": "a3f0ce455082268049251776e462d18a493b6d1372d8e05c43bf25275b8f42a6",
+        "signature": "9108581ee69da61c9b92e5bb5bf3c00e502fe6e8894c091f037a8300ecf67631"
+      },
+      "../ts/getnewwindowbounds.ts": {
+        "version": "045fbbd8f02a7b537fea64de1dd6c1958725710ddd3a70320003e3baf0c9e0f8",
+        "signature": "e49387c70cce4d3b76596e7c76ca152cac535cefabaa8c5d88611f58a4914d70"
+      },
+      "../ts/movetabs.ts": {
+        "version": "ab30c510d5013942d72c9985a06830daad4bc3ee7dce996392ff50aacd457df9",
+        "signature": "b910ab79142bd4c5c7f83311ade3d78984f6691d376a2b53e92e056c4c44cb78"
+      },
+      "../ts/getneighbouringwindowid.ts": {
+        "version": "bb3c4ef5ce80294cd741a761e95110ef36a9019004bc3745c8b88c141e72007e",
+        "signature": "6466840628dac3427d492d1fe40709ee6ff1c2bc9255bf18b9f61b292ede1c1f"
+      },
+      "../ts/gettabstounhighlight.ts": {
+        "version": "13fde1eff71b601a2ca44fb4eb3c6565faf464501d2e45c1570230573e6a415b",
+        "signature": "8aa581077e5912edd6c541527d0c9d4f05a1da2aee523ff54d723248146308d3"
+      },
+      "../ts/unhighlighttabs.ts": {
+        "version": "7dff6805e86eeb9c56d2869c5a155d7864b95ae458937ef551266e0478131f82",
+        "signature": "e2746a8ff71e4b5c1ef30651f56e546dbf8c2c7aaf4bc15d657f14c9424f087f"
+      },
+      "../ts/actionstabs.ts": {
+        "version": "4589499e8071220b971c8ff598b1009ad4adcbac2573b3aed93582266ee1ff66",
+        "signature": "3f6992e26e04387523539ec94ecdec2385f8f3015a364dc9add5b9e4b991246c"
+      },
+      "../ts/actionsurls.ts": {
+        "version": "4c6159401c71a8845a37ab83f4e7899b1dc847ea0872df9f0e63a1cf535c00ab",
+        "signature": "b73d96f00af4a85934949d6a5d46c65b83df23e8c368f2ca83aeb66f41b20af3"
+      },
+      "../ts/createmenu.ts": {
+        "version": "2c866e4fcc24cd273aa1ba0852157e9a4a053ccd010d1e79efdd97bbc01d6edf",
+        "signature": "1d36b326364a00e001ee7c8781037bc68c7e65861242bc7ad030821936c9ec7f"
+      },
+      "../ts/index.ts": {
+        "version": "c696493ae3e8f4aa08b71bbe321d7363a8044e28ff33992335e90794b9648236",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../ts/options-page.ts": {
+        "version": "b2f2eb19706f3a97a6d6ad87ded6f35bc8ef07e3692c5548aab271fecc772804",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../node_modules/@types/har-format/index.d.ts": {
+        "version": "3e3144d1b1eab267eab7041cfae2d258636944e96d8a0567f44b574b252ab1f1",
+        "signature": "3e3144d1b1eab267eab7041cfae2d258636944e96d8a0567f44b574b252ab1f1"
+      },
+      "../node_modules/@types/chrome/har-format/index.d.ts": {
+        "version": "be7abf1df570aea13a80f9e26c48e4ec51ee5b5c807326fc730eadba8a118905",
+        "signature": "be7abf1df570aea13a80f9e26c48e4ec51ee5b5c807326fc730eadba8a118905"
+      },
+      "../node_modules/@types/filewriter/index.d.ts": {
+        "version": "d9932f317f16ea21c183b67b73a72f17883c52933980292e7ebba2215495bb5c",
+        "signature": "d9932f317f16ea21c183b67b73a72f17883c52933980292e7ebba2215495bb5c"
+      },
+      "../node_modules/@types/filesystem/index.d.ts": {
+        "version": "40dcb6f3611671f2b9567edf67f9e5c52315663d60cdf0778baefb6007350ea3",
+        "signature": "40dcb6f3611671f2b9567edf67f9e5c52315663d60cdf0778baefb6007350ea3"
+      },
+      "../node_modules/@types/chrome/index.d.ts": {
+        "version": "769b16a255b573692f3f91b9b42b87fc665841f002da42ba841dbc600615a34d",
+        "signature": "769b16a255b573692f3f91b9b42b87fc665841f002da42ba841dbc600615a34d"
+      },
+      "../node_modules/@types/color-name/index.d.ts": {
+        "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
+        "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e"
+      },
+      "../node_modules/@types/jquery/jquerystatic.d.ts": {
+        "version": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c",
+        "signature": "2a19c7dd007f71b9db87dba915e20d894dbdac8aa8fab5d1c3083a61f2316a5c"
+      },
+      "../node_modules/@types/jquery/jquery.d.ts": {
+        "version": "9d21da8939908dafa89d693c3e22aabeef28c075b68bb863257e631deef520f5",
+        "signature": "9d21da8939908dafa89d693c3e22aabeef28c075b68bb863257e631deef520f5"
+      },
+      "../node_modules/@types/jquery/misc.d.ts": {
+        "version": "01fb10dbe84e1aca038943ed7e710ae5468dce9ade9a79b772f660d70274aebd",
+        "signature": "01fb10dbe84e1aca038943ed7e710ae5468dce9ade9a79b772f660d70274aebd"
+      },
+      "../node_modules/@types/jquery/legacy.d.ts": {
+        "version": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc",
+        "signature": "8c4a3355af2c490a8af67c4ec304e970424a15ef648a3c3fbb3ee6634461e2cc"
+      },
+      "../node_modules/@types/sizzle/index.d.ts": {
+        "version": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876",
+        "signature": "7ddac8a4ba398441cfd6d8a69380401378f122ee8cc2d848e6e32f4db2b6c876"
+      },
+      "../node_modules/@types/jquery/index.d.ts": {
+        "version": "6739393f79c9a48ec82c6faa0d6b25d556daf3b6871fc4e5131f5445a13e7d15",
+        "signature": "6739393f79c9a48ec82c6faa0d6b25d556daf3b6871fc4e5131f5445a13e7d15"
+      },
+      "../node_modules/@types/jqueryui/index.d.ts": {
+        "version": "25faf3b2aa86d9dc7026a9c988b28cef3fbc254773850d579e55ad0963b795d8",
+        "signature": "25faf3b2aa86d9dc7026a9c988b28cef3fbc254773850d579e55ad0963b795d8"
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 4,
+      "module": 5,
+      "lib": [
+        "lib.dom.d.ts",
+        "lib.es2017.d.ts"
+      ],
+      "outDir": "./",
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "project": "../tsconfig.json",
+      "watch": true,
+      "configFilePath": "../tsconfig.json"
+    },
+    "referencedMap": {
+      "../ts/options-storage.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/api.ts": [
+        "../ts/options-storage.ts"
+      ],
+      "../ts/createnewwindow.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/getclonebounds.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/getsizeandpos.ts": [
+        "../ts/api.ts",
+        "../ts/options-storage.ts"
+      ],
+      "../ts/getwindowbounds.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/getnewwindowbounds.ts": [
+        "../ts/api.ts",
+        "../ts/getclonebounds.ts",
+        "../ts/getsizeandpos.ts",
+        "../ts/getwindowbounds.ts"
+      ],
+      "../ts/actionstabs.ts": [
+        "../ts/api.ts",
+        "../ts/createnewwindow.ts",
+        "../ts/dobackgroundaction.ts",
+        "../ts/getnewwindowbounds.ts",
+        "../ts/getsizeandpos.ts",
+        "../ts/getwindowbounds.ts",
+        "../ts/movetabs.ts",
+        "../ts/options-storage.ts",
+        "../ts/getneighbouringwindowid.ts",
+        "../ts/gettabstounhighlight.ts",
+        "../ts/unhighlighttabs.ts"
+      ],
+      "../ts/actionsurls.ts": [
+        "../ts/api.ts",
+        "../ts/dobackgroundaction.ts",
+        "../ts/actionstabs.ts",
+        "../ts/getneighbouringwindowid.ts",
+        "../ts/unhighlighttabs.ts",
+        "../ts/gettabstounhighlight.ts"
+      ],
+      "../ts/createmenu.ts": [
+        "../ts/api.ts",
+        "../ts/options-storage.ts"
+      ],
+      "../ts/index.ts": [
+        "../ts/actionstabs.ts",
+        "../ts/actionsurls.ts",
+        "../ts/api.ts",
+        "../ts/createmenu.ts",
+        "../ts/options-storage.ts"
+      ],
+      "../ts/options-page.ts": [
+        "../ts/api.ts",
+        "../ts/getclonebounds.ts",
+        "../ts/options-storage.ts"
+      ],
+      "../node_modules/@types/chrome/har-format/index.d.ts": [
+        "../node_modules/@types/har-format/index.d.ts"
+      ],
+      "../node_modules/@types/filesystem/index.d.ts": [
+        "../node_modules/@types/filewriter/index.d.ts"
+      ],
+      "../node_modules/@types/chrome/index.d.ts": [
+        "../node_modules/@types/chrome/har-format/index.d.ts",
+        "../node_modules/@types/filesystem/index.d.ts"
+      ],
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ],
+      "../node_modules/@types/jqueryui/index.d.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../ts/options-storage.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/api.ts": [
+        "../ts/options-storage.ts"
+      ],
+      "../ts/getclonebounds.ts": [
+        "../ts/api.ts"
+      ],
+      "../node_modules/@types/chrome/har-format/index.d.ts": [
+        "../node_modules/@types/har-format/index.d.ts"
+      ],
+      "../node_modules/@types/filesystem/index.d.ts": [
+        "../node_modules/@types/filewriter/index.d.ts"
+      ],
+      "../node_modules/@types/chrome/index.d.ts": [
+        "../node_modules/@types/chrome/har-format/index.d.ts",
+        "../node_modules/@types/filesystem/index.d.ts"
+      ],
+      "../node_modules/@types/jquery/index.d.ts": [
+        "../node_modules/@types/jquery/jquerystatic.d.ts",
+        "../node_modules/@types/jquery/jquery.d.ts",
+        "../node_modules/@types/jquery/misc.d.ts",
+        "../node_modules/@types/jquery/legacy.d.ts",
+        "../node_modules/@types/sizzle/index.d.ts"
+      ],
+      "../node_modules/@types/jqueryui/index.d.ts": [
+        "../node_modules/@types/jquery/index.d.ts"
+      ],
+      "../ts/getnewwindowbounds.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/getwindowbounds.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/getsizeandpos.ts": [
+        "../ts/api.ts"
+      ],
+      "../ts/createnewwindow.ts": [
+        "../ts/api.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../node_modules/typescript/lib/lib.es5.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.d.ts",
+      "../node_modules/typescript/lib/lib.es2016.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.d.ts",
+      "../node_modules/typescript/lib/lib.dom.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../node_modules/@types/har-format/index.d.ts",
+      "../node_modules/@types/chrome/har-format/index.d.ts",
+      "../node_modules/@types/filewriter/index.d.ts",
+      "../node_modules/@types/filesystem/index.d.ts",
+      "../node_modules/@types/chrome/index.d.ts",
+      "../node_modules/@types/color-name/index.d.ts",
+      "../node_modules/@types/jquery/jquerystatic.d.ts",
+      "../node_modules/@types/jquery/jquery.d.ts",
+      "../node_modules/@types/jquery/misc.d.ts",
+      "../node_modules/@types/jquery/legacy.d.ts",
+      "../node_modules/@types/sizzle/index.d.ts",
+      "../node_modules/@types/jquery/index.d.ts",
+      "../node_modules/@types/jqueryui/index.d.ts",
+      "../ts/api.ts",
+      "../ts/options-page.ts",
+      "../ts/index.ts",
+      "../ts/createmenu.ts",
+      "../ts/actionsurls.ts",
+      "../ts/actionstabs.ts",
+      "../ts/getnewwindowbounds.ts",
+      "../ts/getwindowbounds.ts",
+      "../ts/getsizeandpos.ts",
+      "../ts/getclonebounds.ts",
+      "../ts/createnewwindow.ts",
+      "../ts/options-storage.ts",
+      "../ts/dobackgroundaction.ts",
+      "../ts/movetabs.ts",
+      "../ts/getneighbouringwindowid.ts",
+      "../ts/gettabstounhighlight.ts",
+      "../ts/unhighlighttabs.ts"
+    ]
+  },
+  "version": "3.8.3"
+}

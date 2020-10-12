@@ -1,0 +1,55 @@
+{
+   "app": {
+      "display_mode": "browser",
+      "icon_color": "#EF760C",
+      "launch": {
+         "web_url": "https://app.diagrams.net/index.html?offline=1"
+      },
+      "linked_icons": [ {
+         "size": 32,
+         "url": "https://app.diagrams.net/images/android-chrome-192x192.png"
+      }, {
+         "size": 48,
+         "url": "https://app.diagrams.net/images/android-chrome-192x192.png"
+      }, {
+         "size": 64,
+         "url": "https://app.diagrams.net/images/android-chrome-192x192.png"
+      }, {
+         "size": 96,
+         "url": "https://app.diagrams.net/images/android-chrome-192x192.png"
+      }, {
+         "size": 128,
+         "url": "https://app.diagrams.net/images/android-chrome-192x192.png"
+      }, {
+         "size": 192,
+         "url": "https://app.diagrams.net/images/android-chrome-192x192.png"
+      }, {
+         "size": 256,
+         "url": "https://app.diagrams.net/images/android-chrome-512x512.png"
+      }, {
+         "size": 512,
+         "url": "https://app.diagrams.net/images/android-chrome-512x512.png"
+      } ],
+      "theme_color": "rgba(223,108,12,1)"
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "192": "icons/192.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "QP3u1kSLFuSDckl/vCO9IXFWcuTsNgW7bs8zIuR3IXE=",
+   "name": "draw.io",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://app.diagrams.net/*" ],
+         "title": "draw.io"
+      }
+   },
+   "version": "2020.8.7.14453"
+}

@@ -1,0 +1,6 @@
+2020/04/17-13:03:14.314 3945 Reusing MANIFEST /home/vinay/.config/google-chrome/Default/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/17-13:03:14.315 3945 Recovering log #4679
+2020/04/17-13:03:14.321 3945 Reusing old log /home/vinay/.config/google-chrome/Default/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/004679.log 
+2020/04/17-13:03:16.787 3fd4 Level-0 table #4684: started
+2020/04/17-13:03:16.796 3fd4 Level-0 table #4684: 1196207 bytes OK
+2020/04/17-13:03:16.797 3fd4 Delete type=0 #4679

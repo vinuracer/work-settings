@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp xstartup-linux xstartup
+tightvncserver -name teak-debug -geometry 2540x1040

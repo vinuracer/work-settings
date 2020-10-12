@@ -1,0 +1,15 @@
+2020/07/29-23:20:11.034 58c0 Reusing MANIFEST /home/vinay/.config/google-chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/29-23:20:11.034 58c0 Recovering log #13
+2020/07/29-23:20:11.035 58c0 Reusing old log /home/vinay/.config/google-chrome/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000013.log 
+2020/08/02-13:22:00.253 5951 Level-0 table #18: started
+2020/08/02-13:22:00.254 5951 Level-0 table #18: 190 bytes OK
+2020/08/02-13:22:00.255 5951 Delete type=0 #13
+2020/08/02-13:22:00.255 5951 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/02-13:22:00.255 5951 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 219 : 1
+2020/08/02-13:22:00.255 5951 Compacting 1@1 + 1@2 files
+2020/08/02-13:22:00.255 5951 Generated table #19@1: 209 keys, 3195 bytes
+2020/08/02-13:22:00.255 5951 Compacted 1@1 + 1@2 files => 3195 bytes
+2020/08/02-13:22:00.256 5951 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/08/02-13:22:00.256 5951 Delete type=2 #18
+2020/08/02-13:22:00.256 5951 Delete type=2 #15
+2020/08/02-13:22:00.256 5951 Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 219 : 1 .. (end); will stop at (end)

@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://secure.splitwise.com/"
+      },
+      "urls": [ "*://secure.splitwise.com/", "*://splitwise.com/" ]
+   },
+   "description": "Share bills and IOUs.   Make sure everyone gets paid back.",
+   "icons": {
+      "128": "icon_96_padded.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDATXTyH5Tv5Dh56jnlQ6F+dlrR7YbnVuo5DeRXDvAQL6k9+bUv3hG1t1Ja3fu85o8malb6/8DgmzmY28I9lYX0d2SIGYA5DbyUk1GX9mN3fy1agmlVNSQ5Wcrn8yE7YebrvaPZTKrJNYxW2XAG/s0cFStka9Rhyswawm1J+5L7GwIDAQAB",
+   "manifest_version": 2,
+   "name": "Splitwise",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}

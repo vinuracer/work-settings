@@ -1,0 +1,48 @@
+#!/bin/sh
+# Script to configure X, start common apps, and start xmonad.
+# Author: Vic Fryzel
+# https://github.com/vicfryzel/xmonad-config
+
+
+# Configure PATH so that we can access our scripts below
+PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+
+# Configure X
+xsetroot -cursor_name left_ptr &
+xrdb -merge ~/.Xdefaults &
+xmodmap ~/.xmodmap
+setxkbmap -option "ctrl:nocaps" &
+
+if [ -x /usr/bin/ssh-agent ] && [ -f $local_id -o -f $id2 -o -f $id3 ];
+then
+  eval `ssh-agent -s`
+  ssh-add < /dev/null
+fi
+
+# source the ~/.ssh/rc to create a symlink
+source ~/.ssh/rc
+
+# Start a window compositor. This ensures Google Chrome paints correctly.
+xcompmgr -n &
+
+# Set a wallpaper
+feh --bg-fill ~/Downloads/wall.png &
+
+# Start the system tray
+stalonetray -c ~/.xmonad/stalonetrayrc-dual &
+
+# Start two terminals
+terminator &
+terminator &
+
+# Start a browser
+google-chrome &
+
+# Start screensaver
+# killall gnome-screensaver &
+# xscreensaver -no-splash &
+
+# Start sound server
+pulseaudio --start --log-target=syslog &
+
+exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad

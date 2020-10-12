@@ -1,0 +1,149 @@
+[global_config]
+  always_split_with_profile = True
+  borderless = True
+  enabled_plugins = CustomCommandsMenu, TerminatorThemes, LaunchpadCodeURLHandler, OpenAnyFile, APTURLHandler, LaunchpadBugURLHandler, ClonedSplittingMenu
+  focus = mouse
+  geometry_hinting = False
+  hide_from_taskbar = True
+  inactive_color_offset = 1.0
+  suppress_multiple_term_dialog = True
+  tab_position = hidden
+  title_font = Meslo LG M DZ for Powerline 11
+  title_hide_sizetext = True
+  title_transmit_bg_color = "#76c800"
+  title_use_system_font = False
+  window_state = maximise
+[keybindings]
+  go_down = <Alt><Super>Down
+  go_left = <Alt><Super>Left
+  go_right = <Alt><Super>Right
+  go_up = <Alt><Super>Up
+  group_all_toggle = <Super>h
+  group_tab_toggle = <Super>u
+  hide_window = <Primary><Shift><Alt>h
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_10 = <Alt>0
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 434e7765-43a3-41de-b0f5-56fb1a7fd7bb
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:15
+      size = 1920, 1065
+      title = /bin/bash
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 434e7765-43a3-41de-b0f5-56fb1a7fd7bb
+  [[vin_work]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 0455d5d8-24be-441b-a64c-5d853081d232
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:18
+      size = 1920, 1062
+      title = /bin/bash
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 163
+      ratio = 0.156308851224
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 957
+      ratio = 0.5
+      type = HPaned
+    [[[child6]]]
+      fullscreen = True
+      last_active_term = 73ae3c1e-951e-437c-a042-59b68753f62b
+      last_active_window = False
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1920, 1080
+      title = 'prx-stack:1:libprx - "/bin/bash" '
+      type = Window
+    [[[child7]]]
+      order = 0
+      parent = child6
+      position = 957
+      ratio = 0.5
+      type = HPaned
+    [[[child8]]]
+      order = 0
+      parent = child7
+      position = 252
+      ratio = 0.236111111111
+      type = VPaned
+    [[[terminal10]]]
+      order = 1
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = 38c88a73-51cd-4ba4-8dd4-f817b99e688a
+    [[[terminal11]]]
+      order = 1
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 73ae3c1e-951e-437c-a042-59b68753f62b
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 434e7765-43a3-41de-b0f5-56fb1a7fd7bb
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = bde714e2-9e36-4390-9f5f-20e05fc77a56
+    [[[terminal5]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 0455d5d8-24be-441b-a64c-5d853081d232
+    [[[terminal9]]]
+      order = 0
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = f610aca7-0779-4aee-a55c-bcc1fb822cd5
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#ffffff"
+    custom_command = /bin/zsh
+    font = Meslo LG M DZ for Powerline 11
+    foreground_color = "#ffffff"
+    login_shell = True
+    scrollback_infinite = True
+    show_titlebar = False
+    use_custom_command = True
+    use_system_font = False

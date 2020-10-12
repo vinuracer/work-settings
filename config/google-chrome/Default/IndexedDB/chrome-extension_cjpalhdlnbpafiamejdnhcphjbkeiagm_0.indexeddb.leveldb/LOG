@@ -1,0 +1,8 @@
+2020/08/06-22:17:34.872 7d6b Reusing MANIFEST /home/vinay/.config/google-chrome/Default/IndexedDB/chrome-extension_cjpalhdlnbpafiamejdnhcphjbkeiagm_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/06-22:17:34.872 7d6b Recovering log #22
+2020/08/06-22:17:34.872 7d6b Reusing old log /home/vinay/.config/google-chrome/Default/IndexedDB/chrome-extension_cjpalhdlnbpafiamejdnhcphjbkeiagm_0.indexeddb.leveldb/000022.log 
+2020/08/06-22:17:36.877 34c Level-0 table #26: started
+2020/08/06-22:17:36.877 34c Level-0 table #26: 0 bytes OK
+2020/08/06-22:17:36.878 34c Delete type=0 #22
+2020/08/06-22:17:36.878 34c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/06-22:17:36.878 34c Manual compaction at level-1 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp xstartup-windows xstartup
+tightvncserver -name arjuna-debug -geometry 1520x800
