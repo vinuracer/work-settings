@@ -413,6 +413,7 @@ set whichwrap+=<,>,h,l
 if has('mouse')
   set mouse=a
 endif
+set ttymouse=sgr
 
 " Ignore case when searching
 set ignorecase

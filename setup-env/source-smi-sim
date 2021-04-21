@@ -59,19 +59,19 @@ source $PRX_RTL/.iprc
 #----------------------------- EXT ----------------------------#
 
 # Source synopsys environment setup
-#source /share/xcl/external/tools/env_setup/synopsys_setup.sh
-export SNPSLMD_LICENSE_FILE=$LM_LICENSE_FILE
-export DESIGNWARE_HOME=/share/external/tools/synopsys/dw/iip
+# source /share/xcl/external/tools/env_setup/synopsys_setup.sh
+# export SNPSLMD_LICENSE_FILE=$LM_LICENSE_FILE
+# export DESIGNWARE_HOME=/share/external/tools/synopsys/dw/iip
 
 # Source Mentor Questa environment setup -- XCL
-#source /share/xcl/external/tools/env_setup/mentor_setup.sh
+# source /share/xcl/external/tools/env_setup/mentor_setup.sh
 
 # Source Mentor Questa environment setup -- SJC
-source /share/sjc/external/tools/env_setup/mentor_setup.sh
+# source /share/sjc/external/tools/env_setup/mentor_setup.sh
 
 # Xilinx Vivado toolchain
-export PATH=$PATH:/opt/Xilinx/Vivado/2019.2/bin
-export XILINX_VIVADO=/opt/Xilinx/Vivado/2019.2
+# export PATH=$PATH:/opt/Xilinx/Vivado/2019.2/bin
+# export XILINX_VIVADO=/opt/Xilinx/Vivado/2019.2
 
 # Synplify premier installation
-export PATH=$PATH:/share/xcl/turret/external/tools/synopsys/fpga/P-2019.09-SP1/bin
+# export PATH=$PATH:/share/xcl/turret/external/tools/synopsys/fpga/P-2019.09-SP1/bin
