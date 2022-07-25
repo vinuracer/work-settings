@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/home/vinay/.oh-my-zsh"
+export ZSH="/cb/home/vinayg/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -36,7 +36,7 @@ DISABLE_AUTO_TITLE="true"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -52,7 +52,7 @@ DISABLE_AUTO_TITLE="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$ZSH/custom
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -92,7 +92,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias cp="cp -i" # always ask before copying a file onto another file
     alias logout="exit" # make "logout" work
     alias vi="vim"
-
 fi
 
 # Alsiases -- ls aliases
@@ -129,8 +128,8 @@ plugins=(
   scala
   tmux
   # unified-titles
-  # vi-mode
-  # vim-interaction
+  vi-mode
+  vim-interaction
   web-search
   zsh-256color
   zsh-navigation-tools
@@ -138,6 +137,7 @@ plugins=(
   # zsh-change-case
   # zsh-interactive-cd
   zsh-syntax-highlighting
+  zsh-autosuggestions
   # zsh-syntax-highlighting-filetypes
   # zsh-titles
   # zsh-tmux-rename
@@ -146,10 +146,6 @@ plugins=(
   # zsh-bash
   )
 
-# Add the ssh identities
-# zstyle :omz:plugins:ssh-agent agent-forwarding on
-# zstyle :omz:plugins:ssh-agent identities teak_auth_rsa
-
 source $ZSH/oh-my-zsh.sh
 
 # oh-my-zsh apth
@@ -157,13 +153,13 @@ export OMZ=$HOME/.oh-my-zsh/plugins
 
 # Custom utility scripts
 # zsh-bd
-. $OMZ/zsh-bd/bd.zsh
+#. $OMZ/zsh-bd/bd.zsh
 
 # change-case
 #. $OMZ/zsh-change-case/change-case.zsh
 
-# zsh tmux
-. $OMZ/zsh-tmux/tmux.plugin.zsh
+# tmux-zsh
+. $OMZ/tmux/tmux.plugin.zsh
 
 # tmux session manager
 export PATH=$PATH:$OMZ/tsm/dist/bin
@@ -187,7 +183,7 @@ fi
 
 # Monitor setup
 dual () {
-  xrandr --output DVI-D-0 --primary --left-of HDMI-0 --output HDMI-0 --auto
+  # xrandr --output DVI-D-0 --primary --left-of HDMI-0 --output HDMI-0 --auto
   # xrandr --output HDMI-0 --primary --left-of DVI-D-0 --output DVI-D-0 --auto
 }
 
@@ -195,3 +191,26 @@ dual () {
 single () {
   xrandr --output DVI-D-0 --off
 }
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
+
+#source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+# zinit light-mode for \
+#     zinit-zsh/z-a-rust \
+#     zinit-zsh/z-a-as-monitor \
+#     zinit-zsh/z-a-patch-dl \
+#     zinit-zsh/z-a-bin-gem-node
+
+### End of Zinit's installer chunk

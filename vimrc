@@ -39,7 +39,6 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -71,7 +70,6 @@ let c_space_errors = 1
 " Macro to remove trailing whitespaces
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
-
 " Whitespace highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -83,6 +81,10 @@ autocmd BufWinLeave * call clearmatches()
 " Enable/disable highlight
 :nnoremap <Leader>wn :match ExtraWhitespace /^\s* \s*\<Bar>\s\+$/<CR>
 :nnoremap <Leader>wf :match<CR>
+
+" Enable python3 for all plugins
+if has('python3')
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM PLUG BUNDLE
@@ -100,14 +102,14 @@ call plug#begin('~/.vim/plugged')
 "  Plug 'roxma/nvim-yarp'
 "  Plug 'roxma/vim-hug-neovim-rpc'
 "endif
-"let g:deoplete#enable_at_startup = 1
-"
-"" deoplete tab-complete
-"inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-"
-"" Other deoplete misc features
-"let g:deoplete#enable_ignore_case=1
-"let g:deoplete#auto_complete_delay=200
+let g:deoplete#enable_at_startup = 1
+
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" Other deoplete misc features
+let g:deoplete#enable_ignore_case=1
+let g:deoplete#auto_complete_delay=200
 
 " vim-zsh titles
 Plug 'MikeDacre/tmux-zsh-vim-titles'
@@ -120,7 +122,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " vim verilog instance
-Plug 'antoinemadec/vim-verilog-instance'
+"Plug 'antoinemadec/vim-verilog-instance'
 let g:verilog_instance_skip_last_coma = 1
 
 "nerd-tree
@@ -133,8 +135,10 @@ let g:NERDTreeToggle="<F2>"
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
 
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+
 "vim-autotag
-Plug 'craigemery/vim-autotag'
+"Plug 'craigemery/vim-autotag'
 
 " Initialize plugin system
 call plug#end()
@@ -162,8 +166,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 
-"plugin for autocomplete
+" plugin for autocomplete
 Plugin 'Valloric/YouCompleteMe'
+let g:pymode_python = 'python3'
+
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
 
@@ -174,27 +180,27 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 let g:ycm_key_list_accept_completion = ['<C-y>']
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_complettion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 set shortmess+=c
 
-"### Ulti Snips"
-" Track the engine.
-Plugin 'SirVer/ultisnips'
+" Ulti Snips -- Track the engine
+"Plugin 'SirVer/ultisnips'
 
-" " Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
+" Snippets are separated from the engine. Add this if you want them:
+"Plugin 'honza/vim-snippets'
+"Plugin 'MarcWeber/vim-addon-mw-utils'
+"Plugin 'tomtom/tlib_vim'
 
-"" " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger           = '<tab>'
-let g:UltiSnipsJumpForwardTrigger      = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
-let g:UltiSnipsListSnippets            = '<c-tab>'
-let g:UltiSnippetsDir="~/.vim/bundle/ultisnips/"
-let g:UltiSnippetsDirectories = ['ultisnips', 'vim-snippets', 'vim-snippets/snippets', 'vim-snippets/UltiSnips']
+"  Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger           = '<tab>'
+"let g:UltiSnipsJumpForwardTrigger      = '<tab>'
+"let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+"let g:UltiSnipsListSnippets            = '<c-tab>'
+"let g:UltiSnippetsDir="~/.vim/bundle/ultisnips/"
+"let g:UltiSnippetsDirectories = ['ultisnips', 'vim-snippets', 'vim-snippets/snippets', 'vim-snippets/UltiSnips']
 
-""If you want :UltiSnipsEdit to split your window.
+"If you want :UltiSnipsEdit to split your window.
 "let g:UltiSnipsEditSplit="vertical"
 
 "Super Tab
@@ -202,12 +208,12 @@ Plugin 'ervandew/supertab'
 let g:SuperTabClosePreviewOnPopupClose = 1
 
 "YCM-generator
-Plugin 'rdnetto/YCM-Generator'
+"Plugin 'rdnetto/YCM-Generator'
 
 "clang-complete
 Plugin 'rip-rip/clang_complete'
 let g:clang_use_library=1
-let g:clang_library_path='/usr/lib/x86_64-linux-gnu'
+let g:clang_library_path='/usr/lib64/llvm'
 
 ""plugin for vim-airline
 Plugin 'vim-airline/vim-airline'
@@ -259,33 +265,33 @@ set encoding=utf-8
 "Tagbar for Ctags
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
+let g:tagbar_ctags_bin = '/cb/home/vinayg/.local/bin/bin/ctags'
 
 "nerd-commenter
-Plugin 'scrooloose/nerdcommenter'
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCommentEmptyLines = 1
+"Plugin 'scrooloose/nerdcommenter'
+"let g:NERDSpaceDelims = 1
+"let g:NERDCompactSexyComs = 1
+"let g:NERDDefaultAlign = 'left'
+"let g:NERDCommentEmptyLines = 1
 
 "vim-vinegar
-Bundle "tpope/vim-vinegar"
+"Bundle "tpope/vim-vinegar"
 
 "Code-Query
-" Required
-Plugin 'Shougo/unite.vim'
-Plugin 'devjoe/vim-codequery'
+"Plugin 'Shougo/unite.vim'
+"Plugin 'devjoe/vim-codequery'
 
 " Optional
 " if your vim version < 8.0
-Plugin 'tpope/vim-dispatch'
-"   " if you don't have an :Ack (or :Ag) liked command
-Plugin 'mileszs/ack.vim'
+"Plugin 'tpope/vim-dispatch'
+" if you don't have an :Ack (or :Ag) liked command
+"Plugin 'mileszs/ack.vim'
 
-""Conque Shell
-Plugin 'vim-scripts/Conque-Shell'
+" Conque Shell
+"Plugin 'vim-scripts/Conque-Shell'
 
-""Vim window swap
-Plugin 'wesQ3/vim-windowswap'
+" Vim window swap
+"Plugin 'wesQ3/vim-windowswap'
 
 " Easy Align
 Plugin 'junegunn/vim-easy-align'
@@ -296,12 +302,12 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " VIM TODO-notes
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
+"Plugin 'xolox/vim-misc'
+"Plugin 'xolox/vim-notes'
 
-let g:notes_directories = ['~/Documents/Notes']
-let g:notes_suffix = '.note'
-let g:notes_title_sync = 'change_title'
+"let g:notes_directories = ['~/Documents/Notes']
+"let g:notes_suffix = '.note'
+"let g:notes_title_sync = 'change_title'
 
 " Silver Searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -319,13 +325,13 @@ let g:tmux_navigator_save_on_switch = 2
 let g:tmux_navigator_disable_when_zoomed = 1
 
 " Vim scala mode
-Plugin 'derekwyatt/vim-scala'
+"Plugin 'derekwyatt/vim-scala'
 
 " Vim System-Verilog Support"
 "Plugin 'cazador481/vim-systemverilog'
 
 " Tabular for verilog alignment "
-Plugin 'godlygeek/tabular'
+" Plugin 'godlygeek/tabular'
 
 " Veritcal lines for alignment"
 Plugin 'Yggdroot/indentLine'
@@ -335,7 +341,7 @@ let g:indentLine_setColors = 239
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " Number increment/decrement script"
-Plugin 'vim-scripts/VisIncr'
+" Plugin 'vim-scripts/VisIncr'
 
 " Vim Syntax plugin for Verilog and System Verilog"
 " Plugin 'vhda/verilog_systemverilog.vim'
@@ -344,7 +350,20 @@ Plugin 'vim-scripts/VisIncr'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 "Xml editor
-Plugin 'othree/xml.vim'
+"Plugin 'othree/xml.vim'
+
+" Line folding plugin
+Plugin 'tmhedberg/SimpylFold'
+let g:SimpylFold_docstring_preview=1
+
+" Auto indentation for python
+Plugin 'vim-scripts/indentpython.vim'
+
+" Syntax checking python
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+
+let python_highlight_all=1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -395,6 +414,15 @@ au! Syntax scala source ~/.vim/syntax/scala.vim
 " whistle DSL syntax
 autocmd BufNewFile,BufRead *.w set syntax=c
 
+" python syntax settings
+au BufNewFile,BufRead *.py:
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
 
 " Always show current position
 set ruler
@@ -462,7 +490,7 @@ map <leader><C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 inoremap <C-w> <C-\><C-o>dB
 inoremap <C-BS> <C-\><C-o>db
 
-""Misc
+"Misc
 "set wildmode=longest:full
 
 set fileformats=unix
@@ -470,6 +498,13 @@ set ff=unix
 
 set complete=.,w,b,u,U,t,i,d  " do lots of scanning on tab completion
 set ttyfast                   " we have a fast terminal
+
+" Enable folding of class/functions
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with a spacebar
+nnoremap <space> za
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -523,7 +558,7 @@ set smarttab
 " 1 tab == 2 spaces for regular
 set shiftwidth=2
 set tabstop=2
-set softtabstop=4
+set softtabstop=2
 
 " 1 tab == 2 spaces for python
 autocmd FileType python setlocal tabstop=2
