@@ -1,0 +1,27 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, Powerline, Menlo for Powerline",
+    "mesonbuild.configureOnOpen": true,
+    "terminal.external.linuxExec": "zsh",
+    "terminal.external.osxExec": "iterm2.app",
+    "editor.fontLigatures": false,
+    "editor.cursorStyle": "block",
+    "vim.commandLineModeKeyBindings": [
+
+    ],
+    "workbench.settings.openDefaultKeybindings": true,
+
+    // The number of spaces a tab is equal to.
+    "editor.tabSize": 2,
+
+    // Insert spaces when pressing Tab.
+    "editor.insertSpaces": true,
+
+    // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+    "editor.detectIndentation": true,
+    "vim.normalModeKeyBindings": [
+
+    ],
+    "window.zoomLevel": -1
+}

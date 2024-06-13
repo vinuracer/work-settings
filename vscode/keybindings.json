@@ -1,0 +1,43 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+cmd+f12",
+        "command": "editor.action.peekDeclaration"
+    },
+    {
+        "key": "alt+f11",
+        "command": "editor.action.referenceSearch.trigger"
+    },
+    {
+        "key": "cmd+f12",
+        "command": "-editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+f12",
+        "command": "editor.action.revealDeclaration"
+    },
+
+    // Navigate Splits
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    // Place your key bindings in this file to overwrite the defaults
+    {
+        "key": "f6", 
+        "command": "workbench.action.navigateEditorGroups" 
+    }
+]
